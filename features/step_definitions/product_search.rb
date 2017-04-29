@@ -13,3 +13,8 @@ Then(/^there should be more than one search result$/) do
   @searchresultspage = PageObjects::SearchResultsPage.new
   @searchresultspage.listing.more_than_one_item_displayed
 end
+
+Then(/^I should see no results page$/) do
+  @searchresultspage = PageObjects::SearchResultsPage.new
+
+end
