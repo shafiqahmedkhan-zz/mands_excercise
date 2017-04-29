@@ -1,10 +1,10 @@
 require 'site_prism'
-require_relative 'sections/home_page/search_bar'
+require_relative 'sections/search_results_page/listing'
 
 module PageObjects
-  class HomePage < SitePrism::Page
+  class SearchResultsPage < SitePrism::Page
 
-    section :search_bar, PageObjects::Sections::HomePage::SearchBar, '.search-box'
+    section :listing, PageObjects::Sections::SearchResultsPage::Listing, '#listing-sort-top'
 
   end
 end

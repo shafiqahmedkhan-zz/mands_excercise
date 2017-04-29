@@ -1,15 +1,14 @@
 module PageObjects
   module Sections
-    module HomePage
-      class SearchBar < SitePrism::Section
+    module SearchResultsPage
+      class Listing < SitePrism::Section
 
-        element :search_box, '#global-search'
-        element :search_btn, '#goButton'
+        element :item_count, '.count'
 
-        def search_item (item)
-          search_box.set item
-          search_btn.click
+        def more_than_one_item_displayed
+          item_count.text.to_i != 0
         end
+
 
       end
     end
