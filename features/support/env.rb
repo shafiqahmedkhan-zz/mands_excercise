@@ -12,3 +12,12 @@ end
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
+
+#Before do
+#  page.driver.browser.open
+#end
+
+#After do |scenario|
+#  onError scenario if scenario.failed?
+#  page.driver.browser.close
+#end

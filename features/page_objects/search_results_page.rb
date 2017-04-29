@@ -5,6 +5,7 @@ module PageObjects
   class SearchResultsPage < SitePrism::Page
 
     section :listing, PageObjects::Sections::SearchResultsPage::Listing, '#listing-sort-top'
+    element :empty_search_msg, '.criteria'
 
   end
 end
