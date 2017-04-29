@@ -9,11 +9,8 @@ module PageObjects
 
         def login (username, password)
           username_txt.set(username)
-          screenshot_and_save_page
           password_txt.set(password)
-          screenshot_and_save_page
           sign_in_btn.click
-          screenshot_and_save_page
         end
 
       end
